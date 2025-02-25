@@ -1,33 +1,32 @@
 {
-   
-    //map types
-     type AreaNumber = {
-        height : number;
-        width : number;
-     } 
+  /* Access Modifier */
 
-    //  type AreaString = {
-    //     [key in keyof AreaNumber] : string;
-    //  }
+  class BankAccount {
+    public readonly id : number;
+    public name : string;
+    protected _balance : number;
+    constructor(id : number , name : string , balance : number){
+        this.id = id;
+        this.name = name;
+        this._balance = balance;
+    }
+    addDeposit(amount : number) {
+        return this._balance = this._balance + amount;
+    }
 
-     //look up type
-    //  type Height = AreaString["height"]
+    getBalance(){
+        return this._balance;
+    }
+  }
 
-     type AreaString<T> = {
-        [key in keyof T] : T[key]
-     }
+  /* const r1 = new BankAccount(56 , "Meskat" , 89);
+  console.log(r1);
+  console.log(r1.addDeposit(700));
+  console.log(r1.getBalance()) */
 
-     const area1 : AreaString<{height : string ; width : number ; random : string}> = {
-        height : "sd",
-        width : 44,
-        random : "sd"
-     } 
-
-
-
-
-
-    
- 
-
+  class StudentAccount extends BankAccount{
+    test(){
+        this._balance
+    }
+  }
 }
