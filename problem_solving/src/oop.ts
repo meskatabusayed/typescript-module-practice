@@ -129,10 +129,10 @@ details. */
 
   }
 
-  const bankAccount2 = new BankAccount2(100)
-  bankAccount2.getBalance();
-  bankAccount2.setBalance(2000);
-  bankAccount2.setBalance(5500);
+  // const bankAccount2 = new BankAccount2(100)
+  // bankAccount2.getBalance();
+  // bankAccount2.setBalance(2000);
+  // bankAccount2.setBalance(5500);
 
 
 }
