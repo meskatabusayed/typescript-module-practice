@@ -134,5 +134,47 @@ details. */
   // bankAccount2.setBalance(2000);
   // bankAccount2.setBalance(5500);
 
+  /*  7. Create a User class with private properties username and password with getter and setter methods. */
+
+ class User{
+  private username: string;
+  private password: string;
+
+  constructor(username: string, password: string) {
+      this.username = username;
+      this.password = password;
+  }
+
+  // Getter for username
+  getUsername(): string {
+      return this.username;
+  }
+
+  // Setter for username
+  setUsername(username: string): void {
+      this.username = username;
+  }
+
+  // Getter for password
+  getPassword(): string {
+      return this.password;
+  }
+
+  // Setter for password
+  setPassword(password: string): void {
+      this.password = password;
+  }
+
+  // Display user details (for testing purposes)
+  displayUser(): void {
+      console.log(`Username: ${this.username}`);
+  }
+
+
+ }
+
+ const user = new User("Meskat" , "123456");
+ 
+
 
 }
