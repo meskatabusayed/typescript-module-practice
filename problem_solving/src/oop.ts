@@ -173,7 +173,36 @@ details. */
 
  }
 
- const user = new User("Meskat" , "123456");
+//  const user = new User("Meskat" , "123456");
+
+/*  8. Implement a Product class where price cannot be negative using encapsulation. */
+
+class Product{
+  private _price : number;
+  constructor(price : number){
+    this._price = price > 0 ? price : 0;
+  }
+
+  get price(){
+    return this._price;
+  }
+
+  set price(price){
+    if(price <= 0){
+      throw new Error("Price can not accept 0 or negetive.")
+    }
+    this._price = price;
+  }
+
+  displayDetaild(){
+    console.log(`Price is ${this._price}`)
+  }
+}
+
+const product = new Product(800);
+// product.displayDetaild();
+
+
  
 
 
