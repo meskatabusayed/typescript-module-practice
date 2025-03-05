@@ -216,7 +216,25 @@ class Book{
 }
 
 const isbn = new Book("01225222056");
-console.log(isbn.getISBN);
+// console.log(isbn.getISBN);
+
+/* 10. Create a Person class with readonly properties name and dateOfBirth. */
+
+class Person{
+  readonly name : string;
+  readonly dateOfBirth : string;
+  constructor(name : string , dateOfBirth : string){
+    this.name = name;
+    this.dateOfBirth = dateOfBirth;
+  }
+  displayDetails(){
+    console.log(`Name : ${this.name} and Date of Birth : ${this.dateOfBirth}`)
+  }
+}
+
+const person = new Person("Meskat" , "28-11-2000");
+// person.displayDetails();
+
  
 
 
