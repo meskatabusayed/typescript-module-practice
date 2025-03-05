@@ -202,7 +202,21 @@ class Product{
 const product = new Product(800);
 // product.displayDetaild();
 
+/*  9. Create a Book class with a protected ISBN property and allow access via a getter method. */
 
+class Book{
+  protected _ISBN : string;
+  constructor(ISBN : string){
+    this._ISBN = ISBN;
+  }
+
+  get getISBN(){
+    return this._ISBN;
+  }
+}
+
+const isbn = new Book("01225222056");
+console.log(isbn.getISBN);
  
 
 
