@@ -235,6 +235,26 @@ class Person{
 const person = new Person("Meskat" , "28-11-2000");
 // person.displayDetails();
 
+/* 11. Create a Person class and extend it to Employee with an additional salary property. */
+
+class Person1{
+  constructor(public name : string , public age : number , public email : string , public phone : string , public address : string){}
+
+}
+
+class Employee extends Person1{
+  constructor( public name : string , public age : number , public email : string , public phone : string , public address : string, public salary : number){
+    super(name , age , email , phone , address)
+  }
+
+  displayDetails(){
+    console.log(`Name : ${this.name} , Age : ${this.age} , Email : ${this.email} , Phone : ${this.phone} , Address : ${this.address} and Salary : ${this.salary}`)
+  }
+}
+
+const employee = new Employee("Meskat" , 99 , "a@gmail.com" , "9589563699" , "Bheramara , Kushtia" , 90);
+employee.displayDetails();
+
  
 
 
