@@ -253,7 +253,13 @@ class Employee extends Person1{
 }
 
 const employee = new Employee("Meskat" , 99 , "a@gmail.com" , "9589563699" , "Bheramara , Kushtia" , 90);
-employee.displayDetails();
+// employee.displayDetails();
+
+/*  12. Extend a Shape class to Triangle and Square classes with their respective area calculations. */
+
+
+
+
 
  
 
